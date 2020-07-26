@@ -1,0 +1,16 @@
+<?php
+
+//$userAgent = $userAgents[0];
+$options  = array(
+            "http" =>
+                    array(
+
+                            "user_agent" => "<script>alert('hola gente')</script>"
+                        )
+                 );
+$context  = stream_context_create($options);
+echo "PINTANDO:<BR>";
+//myuseragent.net
+$u = file_get_contents("https://www.whatsmyua.info",false,$context);
+echo $u;
+ ?>

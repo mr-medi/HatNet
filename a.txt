@@ -1,0 +1,7 @@
+
+> webworker-threads@0.7.13 install /var/www/HatNet/hatnet/node_modules/webworker-threads
+> node-gyp rebuild
+
+make: se entra en el directorio '/var/www/HatNet/hatnet/node_modules/webworker-threads/build'
+  CXX(target) Release/obj.target/WebWorkerThreads/src/WebWorkerThreads.o
+make: se sale del directorio '/var/www/HatNet/hatnet/node_modules/webworker-threads/build'
